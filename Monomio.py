@@ -15,23 +15,17 @@ class Monomio():
         igualLiteral = self.exponente == other.exponente
         return igualLiteral && terminosCompatiblesLiteral(self, other)
 
-    @staticmethod
-    def sumar(self, other):
-        '''Return the sum of itself and other Monomial'''
+    def __add__(self, other):
+        '''Overloaded Method Sum. Return the sum of itself and other Monomial'''
         if(! terminosCompatiblesLiteralyExponente(self, other)) raise TypeError("Error: Diferente Exponentes o Literal")
-        monomioSumado = Monomio(self.numero + other.numero, self.literal, self.exponente)
-        return monomioSumado
+        return Monomio(self.numero + other.numero, self.literal, self.exponente)
 
-    @staticmethod
-    def restar(self, other):
-        '''Return the rest of itself and other Monomial'''
+    def __sub__(self, other):
+        '''Overloaded Method Rest. Return the rest of itself and other Monomial'''
         if(! terminosCompatiblesLiteralyExponente(self, other)) raise TypeError("Error: Diferente Exponentes o Literal")
-        monomioSumado = Monomio(self.numero - other.numero, self.literal, self.exponente)
-        return monomioSumado
+        return Monomio(self.numero - other.numero, self.literal, self.exponente)
 
-    @staticmethod
-    def producto(self, other):
-        '''Return the product of itself and other Monomial'''
+    def __mul__(self, other):
+        '''Overloaded Method Mul. Return the product of itself and other Monomial'''
         if(! terminosCompatiblesLiteral(self, other)) raise TypeError("Error: Diferente Literal")
-        monomioProducto = Monomio(self.numero * other.numero, self.literal, self.exponente + other.exponente)
-        return monomioProducto
+        return Monomio(self.numero * other.numero, self.literal, self.exponente + other.exponente)

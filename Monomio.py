@@ -13,7 +13,7 @@ class Monomio():
 
     def terminosCompatiblesLiteralyExponente(self, other):
         igualLiteral = self.exponente == other.exponente
-        return igualLiteral && terminosCompatiblesLiteral(self, other)
+        return igualLiteral and terminosCompatiblesLiteral(self, other)
 
     def __add__(self, other):
         '''Overloaded Method Sum. Return the sum of itself and other Monomial'''

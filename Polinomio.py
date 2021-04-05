@@ -4,20 +4,20 @@ class Polinomio(list):
         """Overloaded Method Sum. Return the sum of itself and other polynomial."""
         if len(self) > len(other):
             solucion = self[:]
-            for x in range(len(other)): solucion[x] += other[x]
+            for x in enumerate(other): solucion[x] += other[x]
         else:
             solucion = other[:]
-            for x in range(len(self)): solucion[x] += self[x]
+            for x in enumerate(self): solucion[x] += self[x]
         return solucion
 
     def __sub__(self, other):
         """Overloaded Method Rest. Return the sum of itself and other polynomial."""
         if len(self) > len(other):
             solucion = self[:]
-            for x in range(len(other)): solucion[x] += other[x]
+            for x in enumerate(other): solucion[x] -= other[x]
         else:
             solucion = other[:]
-            for x in range(len(self)): solucion[x] += self[x]
+            for x in enumerate(self): solucion[x] -= self[x]
         return solucion
 
     def __mul__(self, other):

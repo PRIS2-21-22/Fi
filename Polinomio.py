@@ -1,7 +1,7 @@
 class Polinomio(list):
 
     def __add__(self, other):
-        '''Overloaded Method Sum. Return the sum of itself and other polynomial'''
+        'Overloaded Method Sum. Return the sum of itself and other polynomial'
         if len(self) > len(other):
             solucion = self[:]
             for x in range(len(other)): solucion[x] += other[x]
@@ -11,7 +11,7 @@ class Polinomio(list):
         return solucion
 
     def __sub__(self, other):
-        '''Overloaded Method Rest. Return the sum of itself and other polynomial'''
+        'Overloaded Method Rest. Return the sum of itself and other polynomial'
         if len(self) > len(other):
             solucion = self[:]
             for x in range(len(other)): solucion[x] += other[x]
@@ -21,7 +21,7 @@ class Polinomio(list):
         return solucion
 
     def __mul__(self, other):
-        ''''Overloaded Method Product. Return the product of itself and other polynomial'''
+        'Overloaded Method Product. Return the product of itself and other polynomial'
         solucion = [0]*(len(self)+len(other)-1)
         for pos1, val1 in enumerate(self):
             for pos2, val2 in enumerate(other):

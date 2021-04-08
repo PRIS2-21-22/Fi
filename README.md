@@ -17,7 +17,7 @@ _Que cosas necesitas para instalar el software_
 
 ## Despliegue 📦
 
-_Deberemnoos clonar el repositorio en la carpeta deseada_
+_Deberemos clonar el repositorio en la carpeta deseada_
 ```
 git clone https://github.com/PRIS2/Fi
 ```

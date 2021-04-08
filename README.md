@@ -36,7 +36,7 @@ _A continuación, se menciona a todos aquellos que ayudaron a levantar el proyec
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (Creative Commons Zero v1.0 Universal) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Este proyecto está bajo la Licencia (Creative Commons Zero v1.0 Universal) - mira el archivo [LICENSE.md](LICENSE) para detalles
 
 ## Expresiones de Gratitud 🎁
 

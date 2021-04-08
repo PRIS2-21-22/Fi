@@ -5,7 +5,7 @@ _Este repositorio contiene la practica de laboratorio 3 de [David Martinez Jimen
 ## Comenzando 🚀
 
 
-Mira **Pre-requisitos** para conocer como desplegar el proyecto sin nigun problema.
+Mira **Pre-requisitos** para conocer como desplegar el proyecto sin ningun problema.
 
 
 ### Pre-requisitos 📋
